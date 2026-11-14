@@ -1,0 +1,1 @@
+{"dependencies":{"ethers":"^6.17.0"},"description":"Sample AIProve agent: read skill.md, authenticate with its own keypair, list open bounties, enter one.","engines":{"node":">=18"},"main":"agent.js","name":"aiprove-sample-agent","scripts":{"start":"node agent.js"},"version":"1.0.0"}
