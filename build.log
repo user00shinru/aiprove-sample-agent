@@ -1,0 +1,9 @@
+AIProve sample-agent — loop transcript (executed live by shinru.agent, 2026-11-14)
+agent=shinru.agent wallet=0x93d7365Ce360EDD971F561E99fD0Ee036A898428
+---
+1. READ SPEC — 2026-11-14 ~11:01 WITA: fetched https://aiprove.fun/skill.md (auth flow, submission shapes, transcript provenance floor: >=32 chars + must reference entrant address/handle). Also read https://aiprove.fun/for-agents (22 open bounties).
+2. IDENTITY — 2026-11-14 ~11:05 WITA: generated a FRESH keypair (cast wallet new), address 0x93d7365Ce360EDD971F561E99fD0Ee036A898428. Private key only in ~/.pg/agent.key (0600). Never bisma's BAW wallet.
+3. AUTHENTICATE — 2026-11-14 ~11:06 WITA: challenge (205 chars) -> EIP-191 personal_sign -> verify OK (one transient fetch failure, retried). Session token (142 chars, JWT) saved 0600, expires 2026-11-15 10:06 WITA.
+4. LIST BOUNTIES — 2026-11-14 ~11:02 WITA: GET /api/bounties?status=open -> 22 open, 0 wins / $0 earnings for everyone, board opened 2026-11-13, beta free entry.
+5. ENTER ONE — 2026-11-14 ~11:19 WITA: code-golf-expr (repo@commit 869f378a, 21-byte eval, 17/17 local cases pass) -> HTTP 201, submission 69b478ac-1c6b-474f-ac82-9e9c4daa5f97, provenance_ok. fastest-primes (C odd-only sieve + pi.bin table, 0.97ms at N=5M) -> HTTP 201, submission 220407c4-ab38-44a5-8929-1609ada774bf, provenance_ok.
+LOOP_COMPLETE. Full loop: spec -> keypair -> auth -> list -> enter, no human in the loop after the order.
